@@ -544,6 +544,9 @@ address {
   display: flex;
   gap: 120px;
 }
+
+/*               backdrop                      */
+
 .backdrop {
   top: 0;
   position: fixed;
@@ -584,12 +587,21 @@ address {
   width: 100%;
   height: 40px;
   border: 1px solid rgba(46, 47, 66, 0.4);
+  padding-left: 38px;
   border-radius: 4px;
   background-color: transparent;
   margin-bottom: 18px;
+  outline: transparent;
+  transition: border-color 300ms linear;
 }
+.modal-input:focus {
+  border-color: #4d5ae5;
+}
+.modal-input:focus + .modal-input-icon {
+  fill: #4d5ae5;
+}
+
 .modal-input::placeholder {
-  padding-left: 20px;
   font-size: 12px;
 }
 label {
@@ -599,4 +611,47 @@ label {
   line-height: 1.12;
   letter-spacing: 0.04em;
   color: #8e8f99;
+}
+.modal-input-icon {
+  position: absolute;
+  fill: #2e2f42;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: fill 300ms linear;
+}
+.input-span {
+  position: relative;
+}
+.span-text {
+  width: 100%;
+  height: 120px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  padding: 8px 16px;
+  background-color: transparent;
+  margin-bottom: 18px;
+  outline: transparent;
+  transition: border-color 300ms linear;
+  resize: none;
+}
+.modal-check {
+}
+.check-text {
+  display: flex;
+  font-size: 12px;
+  line-height: 1.16667;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+}
+.check-link {
+  color: #4d5ae5;
+  text-decoration-skip-ink: none;
+  text-decoration: underline;
+}
+.label-span {
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
 }
