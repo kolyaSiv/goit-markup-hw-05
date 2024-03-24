@@ -559,10 +559,7 @@ address {
   margin-bottom: 16px;
 }
 .footer-form {
-}
-.footer-list-form {
   display: flex;
-
   gap: 24px;
 }
 .footer-input {
