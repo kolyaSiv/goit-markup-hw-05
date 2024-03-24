@@ -705,13 +705,17 @@ address {
 .label-wrap {
   margin-bottom: 8px;
 }
-label {
+.back-label {
+  line-height: 1.17;
   margin-bottom: 4px;
   display: block;
   font-size: 12px;
   line-height: 1.12;
   letter-spacing: 0.04em;
   color: #8e8f99;
+}
+.input-wrap {
+  position: relative;
 }
 .modal-input-icon {
   position: absolute;
