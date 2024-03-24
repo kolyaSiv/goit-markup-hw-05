@@ -490,7 +490,7 @@ address {
   color: #f4f4fd;
 }
 .footer-network {
-  margin-right: 120px;
+  margin-right: 80px;
 }
 .footer-network-text {
   margin-bottom: 16px;
@@ -545,7 +545,6 @@ address {
   gap: 120px;
 }
 .form-wrap {
-  display: flex;
   align-items: center;
   justify-content: center;
   gap: 24px;
