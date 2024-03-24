@@ -566,6 +566,7 @@ address {
   background-color: transparent;
   border: 1px solid #fff;
   border-radius: 4px;
+  font-size: 12px;
   width: 264px;
   height: 40px;
   line-height: 2;
@@ -681,7 +682,6 @@ address {
 .modal-input {
   width: 100%;
   height: 40px;
-  font-size: 12px;
   padding-left: 38px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
