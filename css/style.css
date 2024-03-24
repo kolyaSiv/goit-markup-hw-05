@@ -638,8 +638,6 @@ address {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-circle {
-  width: 24px;
-  height: 24px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   position: absolute;
   cursor: pointer;
@@ -710,7 +708,6 @@ address {
   margin-bottom: 4px;
   display: block;
   font-size: 12px;
-  line-height: 1.12;
   letter-spacing: 0.04em;
   color: #8e8f99;
 }
