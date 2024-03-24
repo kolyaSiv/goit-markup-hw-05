@@ -666,7 +666,6 @@ address {
   fill: #ffffff;
 }
 .modal-title {
-  padding-top: 48px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -724,9 +723,6 @@ address {
 }
 .footer-wrap-comment {
   margin-bottom: 16px;
-}
-.input-span {
-  position: relative;
 }
 .span-text {
   width: 100%;
