@@ -126,8 +126,8 @@ address {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  position: relative; /* Додавання позиціонування елемента */
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); /* Додавання плавної зміни кольору тексту */
+  position: relative;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-menu-link:hover,
 .header-menu-link:focus {
@@ -144,7 +144,7 @@ address {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); /* Додавання плавної зміни кольору тексту */
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-comtact-link:hover,
 .header-comtact-link:focus {
@@ -544,6 +544,62 @@ address {
   display: flex;
   gap: 120px;
 }
+.form-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+.form-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #fff;
+  margin-bottom: 16px;
+}
+.footer-form {
+}
+.footer-list-form {
+  display: flex;
+
+  gap: 24px;
+}
+.footer-input {
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  width: 264px;
+  height: 40px;
+}
+.footer-input::placeholder {
+  padding-top: 8px;
+  padding-left: 16px;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+.footer-form-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: #4d5ae5;
+  border-radius: 4px;
+  padding: 8px 24px;
+  width: 165px;
+  height: 40px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #fff;
+}
+.button-icon {
+  margin-left: 16px;
+}
 
 /*               backdrop                      */
 
@@ -553,6 +609,14 @@ address {
   width: 100%;
   height: 100%;
   background-color: rgba(46, 47, 66, 0.4);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
 }
 .modal {
   padding: 24px;
@@ -565,6 +629,23 @@ address {
   top: 50%;
   transform: translate(-50%, -50%);
 }
+.modal-circle {
+  width: 24px;
+  height: 24px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 24px;
+  height: 24px;
+  background-color: #e7e9fc;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
+    0 2px 1px 0 rgba(0, 0, 0, 0.2);
+}
 .modal-title {
   padding-top: 48px;
   font-weight: 500;
@@ -576,18 +657,13 @@ address {
   margin-bottom: 16px;
 }
 .modal-icon {
-  position: absolute;
-  top: 24px;
-  right: 24px;
   border-radius: 100%;
-  width: 24px;
-  height: 24px;
 }
 .modal-input {
   width: 100%;
   height: 40px;
-  border: 1px solid rgba(46, 47, 66, 0.4);
   padding-left: 38px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   background-color: transparent;
   margin-bottom: 18px;
@@ -635,7 +711,10 @@ label {
   transition: border-color 300ms linear;
   resize: none;
 }
-.modal-check {
+.modal-check:checked + .check-text .label-span {
+  background-color: #404bbf;
+  border: none;
+  fill: #f4f4fd;
 }
 .check-text {
   display: flex;
@@ -643,6 +722,8 @@ label {
   line-height: 1.16667;
   letter-spacing: 0.04em;
   color: #8e8f99;
+  align-items: center;
+  margin-bottom: 24px;
 }
 .check-link {
   color: #4d5ae5;
@@ -654,4 +735,24 @@ label {
   height: 16px;
   border-radius: 2px;
   border: 1px solid rgba(46, 47, 66, 0.4);
+  margin-right: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+}
+.modal-button-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal-button {
+  border: none;
+
+  border-radius: 4px;
+  padding: 16px 32px;
+  width: 169px;
+  height: 56px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background: #4d5ae5;
 }
