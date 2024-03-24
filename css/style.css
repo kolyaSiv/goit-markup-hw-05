@@ -660,6 +660,7 @@ address {
 .modal-circle:hover {
   border: none;
   fill: #ffffff;
+  background-color: #404bbf;
 }
 .modal-circle:focus {
   background-color: #404bbf;
@@ -700,6 +701,9 @@ address {
 
 .modal-input::placeholder {
   font-size: 12px;
+}
+.label-wrap {
+  margin-bottom: 8px;
 }
 label {
   margin-bottom: 4px;
