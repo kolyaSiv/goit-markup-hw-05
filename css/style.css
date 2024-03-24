@@ -686,7 +686,6 @@ address {
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   background-color: transparent;
-  margin-bottom: 18px;
   outline: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -782,6 +781,7 @@ address {
   display: inline-flex;
 }
 .modal-button {
+  margin: 0 auto;
   border: none;
   display: block;
   border-radius: 4px;
